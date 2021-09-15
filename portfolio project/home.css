@@ -1,0 +1,27 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main > .gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+main > .gallery > img {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ddd;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+main > .gallery > img:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
